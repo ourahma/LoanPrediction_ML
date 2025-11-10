@@ -17,6 +17,7 @@ A web-based application to predict loan approval status using multiple machine l
   * Logistic Regression
   * K-Nearest Neighbors (KNN)
   * Support Vector Classifier (SVC)
+  * Gradient Boosting classifier.
   * Stacking/Ensemble model combining all base models
   * Voting Hard/Soft.
 * Handles missing data and categorical encoding automatically.
@@ -52,13 +53,18 @@ A web-based application to predict loan approval status using multiple machine l
    * Combines predictions from multiple base models (RF, LR, KNN, SVC) using a meta-classifier.
    * Pros: Often more accurate than individual models as it leverages strengths of each base model.
 
-6. **Voting Hard Model**
+6. **Gradient boosting classifier :**
+    * Builds an ensemble of weak prediction models, typically decision trees, in a stage-wise fashion to optimize predictive performance.
+    * Pros: It delivers state-of-the-art predictive accuracy and naturally handles feature interactions and mixed data types.
+    * Cons: It is computationally expensive, sensitive to outliers, and requires extensive hyperparameter tuning to prevent overfitting.
+
+7. **Voting Hard Model**
 
     * Combines base model predictions using majority vote.
     * Pros: Simple to implement, robust to outliers in predictions.
     * Cons: Does not consider prediction confidence, can be biased if base models are imbalanced.
 
-7. **Voting Soft Model**
+8. **Voting Soft Model**
 
     * Combines base model predictions by averaging probabilities.
     * Pros: Considers confidence of each model, often more accurate than hard voting.
@@ -152,4 +158,5 @@ https://github.com/user-attachments/assets/1f43fcb7-787b-44be-a70f-4416ce5dd9a6
 ## Author:
 
 - **OURAHMA Maroua.**
+
 
