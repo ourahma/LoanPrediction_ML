@@ -28,6 +28,7 @@ st.sidebar.markdown("""
 - KNN
 - Logistic regression  
 - SVM
+- Gradient Boosting
 - Voting Classifier (Hard)
 - Voting Classifier (Soft)
 - Stacking Classifier
@@ -75,6 +76,7 @@ def load_models_and_preprocessors():
             'KNN': joblib.load('models/knn.joblib'),
             'SVC': joblib.load('models/svc.joblib'),
             'Logistic Regression': joblib.load('models/lg.joblib'),
+            'Gradient Boosting': joblib.load('models/gradient_boosting_classifier.joblib'),
             'Voting Hard': joblib.load('models/voting_classifier_hard.joblib'),
             'Voting Soft': joblib.load('models/voting_classifier_soft.joblib'),
             'Stacking': joblib.load('models/stacking_classifier.joblib')
@@ -255,6 +257,7 @@ if st.button("🎯 Predict", type="primary"):
             'SVM': "Finds the optimal boundary that separates the classes.",
             'KNN': "Classifies a data point based on the majority class among its nearest neighbors.",
             'Logistic Regression': "Uses a logistic function to model the probability of a binary outcome.",
+            "Gradient Boosting": "Builds an ensemble of weak prediction models, typically decision trees, in a stage-wise fashion to optimize predictive performance.",
             'Voting Hard': "Uses majority voting among individual models.",
             'Voting Soft': "Averages the prediction probabilities of individual models.",
             'Stacking': "A meta-model that learns how to combine predictions from several base models."
