@@ -140,9 +140,7 @@ All preprocessing steps are implemented in the `processors/` folder and applied 
 
 ## ScreenCast
 
-
-https://github.com/user-attachments/assets/1f43fcb7-787b-44be-a70f-4416ce5dd9a6
-
+https://github.com/user-attachments/assets/bdc83855-811c-4464-b1f4-9bf24d882a6f
 
 
 
@@ -158,5 +156,6 @@ https://github.com/user-attachments/assets/1f43fcb7-787b-44be-a70f-4416ce5dd9a6
 ## Author:
 
 - **OURAHMA Maroua.**
+
 
 
